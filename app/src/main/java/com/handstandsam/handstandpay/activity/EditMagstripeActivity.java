@@ -23,7 +23,7 @@ import com.handstandsam.handstandpay.view.CreditCardView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -34,28 +34,28 @@ public class EditMagstripeActivity extends Activity {
 
     private static final Logger logger = LoggerFactory.getLogger(EditMagstripeActivity.class);
 
-    @Bind(R.id.credit_card)
+    @BindView(R.id.credit_card)
     CreditCardView creditCardView;
 
-    @Bind(R.id.swipe_data)
+    @BindView(R.id.swipe_data)
     EditText swipeData;
 
-    @Bind(R.id.usb_reader)
+    @BindView(R.id.usb_reader)
     ImageView usbReaderImage;
 
-    @Bind(R.id.default_button)
+    @BindView(R.id.default_button)
     Button defaultButton;
 
-    @Bind(R.id.save_button)
+    @BindView(R.id.save_button)
     Button saveButton;
 
-    @Bind(R.id.cancel_button)
+    @BindView(R.id.cancel_button)
     Button cancelButton;
 
-    @Bind(R.id.clear_button)
+    @BindView(R.id.clear_button)
     Button clearButton;
 
-    @Bind(R.id.reset_button)
+    @BindView(R.id.reset_button)
     Button resetButton;
 
     @Override

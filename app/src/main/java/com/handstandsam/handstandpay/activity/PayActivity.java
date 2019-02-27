@@ -26,7 +26,7 @@ import com.handstandsam.handstandpay.view.PayView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -34,10 +34,10 @@ public class PayActivity extends Activity {
 
     private static final Logger logger = LoggerFactory.getLogger(PayActivity.class);
 
-    @Bind(R.id.pay_view)
+    @BindView(R.id.pay_view)
     PayView payView;
 
-    @Bind(R.id.credit_card)
+    @BindView(R.id.credit_card)
     CreditCardView creditCardView;
 
     private Context context;

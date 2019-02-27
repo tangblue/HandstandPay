@@ -18,7 +18,7 @@ import com.handstandsam.handstandpay.util.PreferencesUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -35,13 +35,13 @@ public class CreditCardView extends LinearLayout implements SharedPreferences.On
         super(context, attrs);
     }
 
-    @Bind(R.id.customer_name)
+    @BindView(R.id.customer_name)
     TextView customerName;
 
-    @Bind(R.id.exp_date)
+    @BindView(R.id.exp_date)
     TextView expirationDate;
 
-    @Bind(R.id.card_number)
+    @BindView(R.id.card_number)
     TextView cardNumber;
 
 

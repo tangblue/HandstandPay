@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.handstandsam.handstandpay"
         minSdkVersion 19
-        targetSdkVersion 22
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -17,13 +17,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.jakewharton.timber:timber:3.1.0'
-    compile 'com.arcao:slf4j-timber:2.0'
+    implementation 'com.android.support:appcompat-v7:28.+'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.jakewharton.timber:timber:3.1.0'
+    implementation 'com.arcao:slf4j-timber:2.0'
 
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 }

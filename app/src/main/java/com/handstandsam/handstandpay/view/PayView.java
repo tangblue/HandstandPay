@@ -21,7 +21,7 @@ import com.handstandsam.handstandpay.util.MediaPlayerUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -38,19 +38,19 @@ public class PayView extends RelativeLayout {
         super(context, attrs);
     }
 
-    @Bind(R.id.android_guy)
+    @BindView(R.id.android_guy)
     View androidGuyView;
 
-    @Bind(R.id.imgFront)
+    @BindView(R.id.imgFront)
     ImageView imgFront;
 
-    @Bind(R.id.imgBack)
+    @BindView(R.id.imgBack)
     ImageView imgBack;
 
-    @Bind(R.id.coin_container)
+    @BindView(R.id.coin_container)
     View coinContainer;
 
-    @Bind(R.id.credit_card)
+    @BindView(R.id.credit_card)
     CreditCardView creditCardView;
 
     boolean isBackVisible = false; // Boolean variable to check if the ic_launcher image is visible currently
